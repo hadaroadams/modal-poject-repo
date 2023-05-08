@@ -1,0 +1,87 @@
+$whitecolor :rgb(226, 231, 235);
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    letter-spacing: 3px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('./img-home.jpg') ;
+    background-size: cover;
+    transition: 0.5s;
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:500px;
+        height: 270px;
+        background-color:$whitecolor;
+        border-radius: 10px;
+        border: none;
+
+        & h1{
+            color: rgb(23, 37, 68);
+        }
+        & button{
+            font-size:15px;
+            padding: 5px;
+            background-color: rgb(8, 180, 132);
+            border:2px solid rgb(8, 180, 132);
+            border-radius: 10px;
+            color:$whitecolor;
+            transition: 0.3s;
+            letter-spacing: 2px;
+
+            &:hover{
+                color: rgb(8, 124, 85);
+                background-color: $whitecolor;
+                border: 2px solid rgb(8, 180, 132);
+                cursor: pointer;
+            }
+        }
+    }
+    .close{
+        display: none;
+    }
+    .pop{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba($color: #0c4dc7, $alpha: 0.4);
+        & div{
+            width: 500px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+            position: relative;
+            border-radius:10px;
+            margin: 9px;
+           & h2{
+                text-align: center;
+               
+            }
+            & button{
+                background-color: transparent;
+                border: none;
+                position: absolute;
+                top:0;
+                right:4;
+                font-size: 35px;
+                color: rgb(190, 42, 42);
+                transition: 0.5s;
+                &:hover{
+                    font-size: 40px;
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}

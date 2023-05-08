@@ -1,0 +1,125 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("./img-home.jpg");
+  background-size: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  height: 270px;
+  background-color: #e2e7eb;
+  border-radius: 10px;
+  border: none;
+}
+
+body main h1 {
+  color: #172544;
+}
+
+body main button {
+  font-size: 15px;
+  padding: 5px;
+  background-color: #08b484;
+  border: 2px solid #08b484;
+  border-radius: 10px;
+  color: #e2e7eb;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+
+body main button:hover {
+  color: #087c55;
+  background-color: #e2e7eb;
+  border: 2px solid #08b484;
+  cursor: pointer;
+}
+
+body .close {
+  display: none;
+}
+
+body .pop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(12, 77, 199, 0.4);
+}
+
+body .pop div {
+  width: 500px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aliceblue;
+  position: relative;
+  border-radius: 10px;
+  margin: 9px;
+}
+
+body .pop div h2 {
+  text-align: center;
+}
+
+body .pop div button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 4;
+  font-size: 35px;
+  color: #be2a2a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .pop div button:hover {
+  font-size: 40px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+/*# sourceMappingURL=style.css.map */
